@@ -1,0 +1,17 @@
+.pageWrapper {
+    margin-top: 30px;
+    display: flex;
+}
+
+.page {
+    padding: 10px;
+    border: 1px solid teal;
+    border-radius: 4px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pageCurrent {
+    font-weight: bold;
+    background-color: teal;
+}
