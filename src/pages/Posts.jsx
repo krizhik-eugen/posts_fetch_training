@@ -15,7 +15,6 @@ import MyPagination from '../components/UI/pagination/MyPagination';
 import UseObserver from '../hooks/useObserver';
 import MySelect from '../components/UI/select/MySelect';
 
-
 function Posts() {
     const [posts, setPosts] = useState([])
     const [filter, setFilter] = useState({sort: '', search: ''})
