@@ -1,6 +1,6 @@
 import React from 'react';
 import About from '../pages/About';
-import Posts from '../pages/Pages';
+import Posts from '../pages/Posts';
 import PostItemContent from '../components/PostItemContent';
 import Error from '../pages/Error';
 import Login from '../components/Login';

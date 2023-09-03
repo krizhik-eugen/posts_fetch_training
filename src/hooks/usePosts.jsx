@@ -1,7 +1,7 @@
-import React from 'react';
+import {useMemo} from 'react';
 
 export const useSortedPosts = (posts, sort) => {
-    const sortedPosts = React.useMemo(() => {
+    const sortedPosts = useMemo(() => {
         if (sort) {
             return [...posts].sort((a, b) => a[sort].localeCompare(b[sort]))
         } else {
@@ -13,7 +13,7 @@ export const useSortedPosts = (posts, sort) => {
 
 export const usePosts = (posts, sort, search) => {
     const sortedPosts = useSortedPosts(posts, sort)
-    const searchedPosts = React.useMemo(() => {
+    const searchedPosts = useMemo(() => {
         return sortedPosts.filter(post => post.title.toLowerCase().includes(search.toLowerCase()))
     }, [search, sortedPosts])
 return searchedPosts

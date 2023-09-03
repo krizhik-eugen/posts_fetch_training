@@ -2,7 +2,7 @@ import React from 'react';
 import MyInput from './UI/input/MyInput';
 import MySelect from './UI/select/MySelect';
 
-const PositFilter = ({filter, setFilter}) => {
+const PostFilter = ({filter, setFilter}) => {
     const options = [
         {value: 'title', name: 'Sort by name'},
         {value: 'body', name: 'Sort by description'}
@@ -18,4 +18,4 @@ const PositFilter = ({filter, setFilter}) => {
     );
 };
 
-export default PositFilter;
+export default PostFilter;
